@@ -27,7 +27,7 @@ app.mount("/static", StaticFiles(directory="./api/static"), name="static")
 #connect( db='SMBT', username='api-user', password='mh$cover@47', host='ec2-13-127-65-92.ap-south-1.compute.amazonaws.com:27017')
 # client = pymongo.MongoClient("mongodb://api_user:mh%24cover%4047@ec2-13-127-65-92.ap-south-1.compute.amazonaws.com:27017/SMBT",authSource="admin") 
 # db = client['SMBT']
-connect(db="SMBT",host="16.171.135.251",username="root",password="123456",port=27017)
+connect(db="SMBT",host="Localhost",port=27017)
 # "mongodb://api_user:mh%24cover%4047@ec2-13-127-65-92.ap-south-1.compute.amazonaws.com"
 app.include_router(user.router)
 app.include_router(unitmaster.router)
